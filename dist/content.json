@@ -1,0 +1,66 @@
+{
+  "name": "Veera Venkat Satyanarayana",
+  "tagline": "The Tech Allrounder",
+  "hero_description": "B.Tech Data Science student building full-stack web apps powered by AI.",
+  "profileImage": "/images/profile.jpg",
+
+  "email": "venkatveera042@gmail.com",
+  "phone": "9948774102",
+  "instagram": "https://instagram.com/venkat77s",
+  "linkedin": "https://www.linkedin.com/in/vvenkatsn/",
+
+  "about": "I'm a B.Tech (Data Science) student at Aditya University, currently in my 2nd year (2025–2029 batch). I enjoy building full-stack web apps that mix practical problem-solving with AI, and I'm always experimenting with new tools and technologies to sharpen my skills.",
+
+  "skills": [
+    { "name": "Python" },
+    { "name": "C" },
+    { "name": "SQL" },
+    { "name": "HTML" },
+    { "name": "CSS" },
+    { "name": "Bootstrap" },
+    { "name": "Flexbox / Grid" },
+    { "name": "Generative AI" }
+  ],
+
+  "projects": [
+    {
+      "name": "AUpulse",
+      "tagline": "Gold & Silver Price Tracker",
+      "logo": "/images/aupulse-logo.png",
+      "description": "A gold and silver price tracking web app built around personal interest in digital gold investing. Features a dashboard with live price charts, a 'what if I invested' calculator, alert history, and prices in INR including Indian import duty and GST. Sends alerts via Telegram and email.",
+      "tech": ["Flask", "SQLite", "MetalpriceAPI", "SerpAPI", "Telegram Bot API", "Gmail SMTP", "GitHub Actions", "Render"],
+      "link": "https://aupulse.onrender.com"
+    },
+    {
+      "name": "WealthifyAI",
+      "tagline": "Smart Wealth, Powered by AI",
+      "logo": "/images/wealthifyai-logo.png",
+      "description": "An AI-powered fintech web app that helps first-time investors build personalized savings plans. Gemini AI recommends asset allocation with interactive Chart.js visualizations and sends a Telegram notification once the plan is ready.",
+      "tech": ["Python", "Flask", "SQLite", "Google Gemini API", "MetalpriceAPI", "Chart.js", "Telegram Bot API", "Render"],
+      "link": "https://wealthify-ai.onrender.com"
+    }
+  ],
+
+  "education": [
+    {
+      "level": "B.Tech — Data Science",
+      "institution": "Aditya University",
+      "years": "2025 – 2029",
+      "note": "Currently in 2nd year"
+    },
+    {
+      "level": "Intermediate (12th)",
+      "institution": "Sri Prakash",
+      "years": "2023 – 2025",
+      "note": ""
+    },
+    {
+      "level": "LKG – 10th",
+      "institution": "Sri Ravi Convent",
+      "years": "Up to 2023",
+      "note": ""
+    }
+  ],
+
+  "notes": []
+}

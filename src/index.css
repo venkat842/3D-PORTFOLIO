@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ─────────────────────────────────────── */
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: #0e0a07;
+    color: #f0ebe4;
+    font-family: 'Space Grotesk', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: rgba(255, 107, 26, 0.35);
+    color: #f0ebe4;
+  }
+
+  ::-webkit-scrollbar        { width: 5px; }
+  ::-webkit-scrollbar-track  { background: #0e0a07; }
+  ::-webkit-scrollbar-thumb  {
+    background: linear-gradient(180deg, #FF6B1A, #FFB84D);
+    border-radius: 99px;
+  }
+}
+
+/* ── Utilities ────────────────────────────────── */
+@layer utilities {
+  /* Gradient text helpers */
+  .text-gradient {
+    background: linear-gradient(135deg, #FF6B1A 0%, #FFB84D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-white {
+    background: linear-gradient(135deg, #ffffff 0%, #FB923C 40%, #FFB84D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glassmorphism card */
+  .glass {
+    background: rgba(20, 12, 5, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 107, 26, 0.15);
+    border-radius: 16px;
+  }
+
+  /* Grid overlay background */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 107, 26, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 107, 26, 0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  /* Neon glow utilities */
+  .neon-blue  { box-shadow: 0 0 18px rgba(255,107,26,0.6),  0 0 50px rgba(255,107,26,0.2);  }
+  .neon-purple{ box-shadow: 0 0 18px rgba(255,184,77,0.6),  0 0 50px rgba(255,184,77,0.2);  }
+
+  /* Timeline line */
+  .timeline-line {
+    background: linear-gradient(180deg, #FF6B1A 0%, #FFB84D 100%);
+  }
+
+  /* Section label */
+  .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #FB923C;
+  }
+}
+
+/* ── Framer Motion perspective trick ─────────── */
+.perspective { perspective: 1200px; }

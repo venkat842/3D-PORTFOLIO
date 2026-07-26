@@ -1,0 +1,63 @@
+{
+  "name": "Veera Venkat Satyanarayana",
+  "tagline": "The Tech Allrounder",
+  "profileImage": "images/profile.jpg",
+  "email": "venkatveera042@gmail.com",
+  "phone": "9948774102",
+  "instagram": "https://instagram.com/venkat77s",
+  "linkedin": "https://www.linkedin.com/in/vvenkatsn/",
+  "domain": "veera-venkat.me",
+
+  "about": "I'm a B.Tech (Data Science) student at Aditya University, currently in my 2nd year (2025-2029 batch). I enjoy building full-stack web apps that mix practical problem-solving with AI, and I'm always experimenting with new tools and technologies to sharpen my skills.",
+
+  "education": [
+    {
+      "level": "B.Tech - Data Science",
+      "institution": "Aditya University",
+      "years": "2025 - 2029",
+      "note": "Currently in 2nd year"
+    },
+    {
+      "level": "Intermediate (12th)",
+      "institution": "Sri Prakash",
+      "years": ""
+    },
+    {
+      "level": "LKG - 10th",
+      "institution": "Sri Ravi Convent",
+      "years": ""
+    }
+  ],
+
+  "skills": [
+    "C",
+    "SQL",
+    "Python",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Flexbox",
+    "Generative AI"
+  ],
+
+  "projects": [
+    {
+      "name": "AUpulse",
+      "tagline": "Gold & Silver Price Tracker",
+      "logo": "images/aupulse-logo.png",
+      "description": "A gold and silver price tracking web app built around personal interest in digital gold investing. Features a dashboard with live price charts, a 'what if I invested' calculator, alert history, and prices calculated in INR including Indian import duty and GST. Sends alerts via Telegram and email.",
+      "tech": ["Flask", "SQLite", "MetalpriceAPI", "SerpAPI", "Telegram Bot API", "Gmail SMTP", "GitHub Actions", "Render"],
+      "link": "https://aupulse.onrender.com"
+    },
+    {
+      "name": "WealthifyAI",
+      "tagline": "Smart Wealth, Powered by AI",
+      "logo": "images/wealthifyai-logo.png",
+      "description": "An AI-powered fintech web app that helps first-time investors build personalized savings plans. Users enter income, savings goal, and timeline, then pick investment types (gold, silver, stocks, mutual funds). The app pulls live market data and uses Gemini AI to recommend a savings amount, asset allocation split, a plain-language explanation, and a projected growth estimate, shown through interactive charts. Sends a Telegram notification once the plan is ready.",
+      "tech": ["Python", "Flask", "SQLite", "Gunicorn", "Google Gemini API", "MetalpriceAPI", "SerpAPI", "mfapi.in", "Telegram Bot API", "Chart.js", "Render"],
+      "link": "https://wealthify-ai.onrender.com"
+    }
+  ],
+
+  "notes": []
+}
