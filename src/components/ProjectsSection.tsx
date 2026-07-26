@@ -60,34 +60,34 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, scrollYProgre
   const opacity = useTransform(scrollYProgress, opacityRange, [1, 0.85]);
 
   return (
-    <div className="sticky top-24 md:top-32 h-[80vh] sm:h-[82vh] md:h-[85vh] w-full flex flex-col justify-start">
+    <div className="sticky top-24 md:top-32 min-h-[480px] h-[78vh] md:h-[82vh] lg:h-[85vh] w-full flex flex-col justify-start">
       <motion.div
         style={{
           scale,
           opacity,
           top: `${index * 28}px`,
         }}
-        className="w-full h-full rounded-[30px] sm:rounded-[40px] md:rounded-[50px] border-2 border-[#D7E2EA]/30 bg-[#0C0C0C] p-5 sm:p-8 md:p-10 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#D7E2EA]/60 transition-colors duration-300"
+        className="w-full h-full rounded-[30px] sm:rounded-[40px] md:rounded-[50px] border-2 border-[#D7E2EA]/30 bg-[#0C0C0C] p-4 xs:p-6 md:p-10 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#D7E2EA]/60 transition-colors duration-300"
       >
         {/* Top Row: Number, Name, Tags, Button */}
-        <div className="flex flex-col gap-4">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div className="flex flex-col gap-3 sm:gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 sm:gap-4">
             {/* Left: Number, Name, and Tags */}
-            <div className="flex items-center gap-4 sm:gap-6">
+            <div className="flex items-center gap-3 sm:gap-6">
               {/* Huge Number */}
               <div 
                 className="font-black text-[#D7E2EA]/30 leading-none select-none"
-                style={{ fontSize: 'clamp(2.5rem, 6vw, 80px)' }}
+                style={{ fontSize: 'clamp(2rem, 5vw, 80px)' }}
               >
                 {project.id}
               </div>
               
               {/* Name and Tagline */}
               <div className="flex flex-col">
-                <h3 className="font-bold text-xl sm:text-2xl md:text-3xl text-[#D7E2EA] uppercase tracking-wide">
+                <h3 className="font-bold text-lg sm:text-2xl md:text-3xl text-[#D7E2EA] uppercase tracking-wide">
                   {project.name}
                 </h3>
-                <span className="text-xs sm:text-sm text-[#D7E2EA] opacity-60 font-medium">
+                <span className="text-[10px] sm:text-sm text-[#D7E2EA] opacity-60 font-medium">
                   {project.tagline}
                 </span>
               </div>
@@ -98,11 +98,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, scrollYProgre
           </div>
 
           {/* Tech tags */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {project.tech.map((tag) => (
               <span 
                 key={tag}
-                className="px-3 py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-[#D7E2EA]/10 border border-[#D7E2EA]/20 text-[#D7E2EA] uppercase tracking-wider"
+                className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[9px] sm:text-xs font-semibold bg-[#D7E2EA]/10 border border-[#D7E2EA]/20 text-[#D7E2EA] uppercase tracking-wider"
               >
                 {tag}
               </span>
@@ -110,14 +110,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, scrollYProgre
           </div>
 
           {/* Description Paragraph */}
-          <p className="text-[#D7E2EA] opacity-80 font-light text-xs sm:text-sm md:text-base leading-relaxed max-w-4xl mt-2">
+          <p className="text-[#D7E2EA] opacity-80 font-light text-[11px] sm:text-sm md:text-base leading-relaxed max-w-4xl mt-1.5 sm:mt-2">
             {project.description}
           </p>
         </div>
 
         {/* Bottom Row: Gorgeous Abstract Placeholder Panel */}
         <div 
-          className="w-full h-[180px] sm:h-[220px] md:h-[280px] lg:h-[320px] rounded-[20px] sm:rounded-[30px] md:rounded-[40px] flex flex-col justify-center items-center relative overflow-hidden mt-6"
+          className="w-full h-[120px] xs:h-[160px] sm:h-[220px] md:h-[280px] lg:h-[320px] rounded-[20px] sm:rounded-[30px] md:rounded-[40px] flex flex-col justify-center items-center relative overflow-hidden mt-4 sm:mt-6"
           style={{ background: project.gradient }}
         >
           {/* Decorative glassmorphic card inside panel */}

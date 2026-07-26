@@ -44,11 +44,11 @@ export const SkillsSection: React.FC = () => {
               y={30} 
               className="w-full"
             >
-              <div className="flex items-center gap-6 sm:gap-10 md:gap-16 py-8 sm:py-10 md:py-12 border-b border-[#0C0C0C]/15 last:border-b-0">
+              <div className="flex items-center gap-4 xs:gap-6 sm:gap-10 md:gap-16 py-6 sm:py-10 md:py-12 border-b border-[#0C0C0C]/15 last:border-b-0">
                 {/* Number */}
                 <div 
-                  className="font-black text-[#0C0C0C] leading-none select-none min-w-[60px] sm:min-w-[120px] md:min-w-[160px]"
-                  style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}
+                  className="font-black text-[#0C0C0C] leading-none select-none min-w-[45px] xs:min-w-[60px] sm:min-w-[120px] md:min-w-[160px]"
+                  style={{ fontSize: 'clamp(2rem, 10vw, 140px)' }}
                 >
                   {skill.id}
                 </div>
@@ -57,13 +57,13 @@ export const SkillsSection: React.FC = () => {
                 <div className="flex flex-col gap-1.5 sm:gap-2">
                   <h3 
                     className="font-medium text-[#0C0C0C] uppercase tracking-wide leading-none"
-                    style={{ fontSize: 'clamp(1.1rem, 2.2vw, 2.1rem)' }}
+                    style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}
                   >
                     {skill.name}
                   </h3>
                   <p 
                     className="font-light text-[#0C0C0C] opacity-60 leading-relaxed max-w-2xl"
-                    style={{ fontSize: 'clamp(0.85rem, 1.6vw, 1.25rem)' }}
+                    style={{ fontSize: 'clamp(0.8rem, 1.6vw, 1.25rem)' }}
                   >
                     {skill.description}
                   </p>

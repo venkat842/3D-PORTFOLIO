@@ -9,19 +9,19 @@ export const AboutSection: React.FC = () => {
       id="about" 
       className="relative min-h-screen w-full bg-[#0C0C0C] px-5 sm:px-8 md:px-10 py-20 flex flex-col items-center justify-center overflow-hidden"
     >
-      {/* Decorative 3D corner images (opacity 45% to blend smoothly with dark background) */}
+      {/* Decorative 3D corner images (opacity adapted to screen size to avoid ocluding text) */}
       {/* Top-Left Moon */}
       <FadeIn 
         delay={0.1} 
         x={-80} 
         y={0} 
         duration={0.9} 
-        className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[120px] sm:w-[160px] md:w-[210px] pointer-events-none select-none z-0"
+        className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[70px] xs:w-[100px] sm:w-[140px] md:w-[180px] lg:w-[210px] pointer-events-none select-none z-0"
       >
         <img 
           src="/moon.jpg" 
           alt="Abstract 3D rendered cresent moon" 
-          className="w-full h-auto object-contain opacity-40 blur-[0.5px]" 
+          className="w-full h-auto object-contain opacity-20 xs:opacity-30 sm:opacity-40 blur-[0.5px]" 
         />
       </FadeIn>
       
@@ -31,12 +31,12 @@ export const AboutSection: React.FC = () => {
         x={-80} 
         y={0} 
         duration={0.9} 
-        className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-[100px] sm:w-[140px] md:w-[180px] pointer-events-none select-none z-0"
+        className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-[60px] xs:w-[85px] sm:w-[120px] md:w-[150px] lg:w-[180px] pointer-events-none select-none z-0"
       >
         <img 
           src="/abstract_object.jpg" 
           alt="Abstract 3D metallic loop sculpture" 
-          className="w-full h-auto object-contain opacity-40 blur-[0.5px]" 
+          className="w-full h-auto object-contain opacity-20 xs:opacity-30 sm:opacity-40 blur-[0.5px]" 
         />
       </FadeIn>
 
@@ -46,12 +46,12 @@ export const AboutSection: React.FC = () => {
         x={80} 
         y={0} 
         duration={0.9} 
-        className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[120px] sm:w-[160px] md:w-[210px] pointer-events-none select-none z-0"
+        className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[70px] xs:w-[100px] sm:w-[140px] md:w-[180px] lg:w-[210px] pointer-events-none select-none z-0"
       >
         <img 
           src="/lego_block.jpg" 
           alt="Abstract 3D lego block" 
-          className="w-full h-auto object-contain opacity-40 blur-[0.5px]" 
+          className="w-full h-auto object-contain opacity-20 xs:opacity-30 sm:opacity-40 blur-[0.5px]" 
         />
       </FadeIn>
 
@@ -61,12 +61,12 @@ export const AboutSection: React.FC = () => {
         x={80} 
         y={0} 
         duration={0.9} 
-        className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-[130px] sm:w-[170px] md:w-[220px] pointer-events-none select-none z-0"
+        className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-[75px] xs:w-[110px] sm:w-[140px] md:w-[185px] lg:w-[220px] pointer-events-none select-none z-0"
       >
         <img 
           src="/geometric_group.jpg" 
           alt="Abstract 3D geometric group" 
-          className="w-full h-auto object-contain opacity-40 blur-[0.5px]" 
+          className="w-full h-auto object-contain opacity-20 xs:opacity-30 sm:opacity-40 blur-[0.5px]" 
         />
       </FadeIn>
 

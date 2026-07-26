@@ -46,8 +46,8 @@ export const HeroSection: React.FC = () => {
 
       {/* Absolute Portrait Centering */}
       {/* top-1/2 -translate-y-1/2 on mobile; bottom-0 translate-y-0 on sm+ */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 w-[300px] sm:w-[380px] md:w-[460px] lg:w-[540px] pointer-events-none flex justify-center">
-        <FadeIn delay={0.6} y={30} className="pointer-events-auto w-full">
+      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 w-[80vw] xs:w-[300px] sm:w-[380px] md:w-[460px] lg:w-[540px] pointer-events-none flex justify-center">
+        <FadeIn delay={0.6} y={30} className="pointer-events-auto w-full flex justify-center">
           <Magnet padding={150} strength={3} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.6s ease-in-out">
             <img 
               src="/portrait.png" 
@@ -59,11 +59,11 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="w-full flex justify-between items-end px-6 md:px-10 pb-7 sm:pb-8 md:pb-10 z-20 pointer-events-none">
+      <div className="w-full flex justify-between items-end px-4 sm:px-6 md:px-10 pb-7 sm:pb-8 md:pb-10 z-20 pointer-events-none">
         <FadeIn delay={0.35} y={20} className="pointer-events-auto">
           <p 
-            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
-            style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
+            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[130px] xs:max-w-[180px] sm:max-w-[220px] md:max-w-[260px]"
+            style={{ fontSize: 'clamp(0.7rem, 1.4vw, 1.5rem)' }}
           >
             B.Tech Data Science student building full-stack web apps powered by AI
           </p>
